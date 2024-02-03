@@ -31,5 +31,5 @@ The tool provides various output forms to interpret the campaign's effectiveness
 
 - T-tests to assess the significance of differences in observable characteristics between treated and untreated groups.
 - Propensity score matching to estimate ATT.
-- Visualization aids such as histograms and scatter plots to assess the propensity score distribution and the covariate balance after matching.
+
 
