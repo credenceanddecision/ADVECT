@@ -1,35 +1,34 @@
-# ImpactATTAnalyzer
-ImpactATTAnalyzer facilitates the estimation of Average Treatment Effect on the Treated (ATT) using the Conditional Independence Assumption (CIA), tailored for marketing campaign data.
+# ADVECT
+**ADVECT (ADVertising Effectiveness & Conditional Treatment Analyzer)** is designed to estimate the Average Treatment Effect on the Treated (ATT) using the Conditional Independence Assumption (CIA), specifically tailored for analyzing marketing campaign data.
 
-## Example scenario
+## Example Scenario
 
-A national wine merchant aims to enhance wine club memberships by encouraging households to purchase a minimum of 12 bottles via a targeted advertising campaign. The "ImpactATTAnalyzer" tool is utilized to design and evaluate this campaign, focusing on identifying households most likely to respond based on variables like wine consumption level, purchase history, and preferences. By conducting power analysis and estimating the Average Treatment Effect on the Treated (ATT) using the Conditional Independence Assumption (CIA), the merchant can efficiently allocate resources, target the campaign more effectively, and measure its impact, optimizing marketing strategies for increased engagement and sales.
+A national wine merchant seeks to boost wine club memberships through a targeted advertising campaign, encouraging households to purchase a minimum of 12 bottles. ADVECT is employed to strategize and assess this campaign, pinpointing households with the highest likelihood of response based on wine consumption levels, purchase history, and preferences. Utilizing power analysis and the CIA to estimate ATT, the tool allows for efficient resource allocation, enhanced targeting, and impactful measurement of the campaign's success, ultimately optimizing marketing strategies for greater engagement and sales.
 
 ## Usage
 
-After installing the necessary libraries, execute the Jupyter notebook `ImpactATTAnalyzer.ipynb`:
+To utilize ADVECT, follow these steps after installing the required libraries:
 
-1. Conduct a power analysis to determine the necessary sample size for reliable results.
-2. Preprocess the data to fit the model's requirements.
-3. Estimate the ATT by comparing the premium wine interest of households exposed to the advertising campaign against those not exposed, while controlling for confounding variables.
+1. Run the Jupyter notebook `ADVECT.ipynb`:
+    - Conduct a power analysis to determine the necessary sample size for robust results.
+    - Preprocess the data according to the model's requirements.
+    - Estimate the ATT by analyzing the interest in premium wine among households exposed to the advertising campaign versus those not exposed, controlling for confounding variables.
 
 ## Data Description
 
-The dataset includes the following key metrics:
+The dataset for ADVECT should include key metrics such as:
 
-- `ad_exposure_wine_club`: Indicator if a household was exposed to the wine club ad campaign.
-- `wine_club_signup`: Indicator if the household signed up for the wine club post-exposure.
-- `digital_engagement_level`: Engagement with online wine-related content.
-- `household_wine_spending`: Annual spending on wine, indicative of purchasing power.
-- `wine_preference_diversity`: Diversity of wine preferences, potentially indicating openness to wine club offerings.
-- `previous_wine_purchase_online`: Indicator of readiness to buy wine through the wine club.
-- `premium_wine_interest`: Interest in premium wine consumption.
+- `ad_exposure_wine_club`: Indicates whether a household was exposed to the wine club advertising campaign.
+- `wine_club_signup`: Indicates whether the household signed up for the wine club following exposure.
+- `digital_engagement_level`: Level of engagement with online wine-related content.
+- `household_wine_spending`: Annual expenditure on wine, reflecting purchasing power.
+- `wine_preference_diversity`: Variety in wine preferences, which may suggest openness to wine club offerings.
+- `previous_wine_purchase_online`: Indicates prior online wine purchases, suggesting readiness to engage with the wine club.
+- `premium_wine_interest`: Interest in premium wine varieties.
 
 ## Results Interpretation
 
-The tool provides various output forms to interpret the campaign's effectiveness:
+ADVECT provides insights into the effectiveness of marketing campaigns through:
 
-- T-tests to assess the significance of differences in observable characteristics between treated and untreated groups.
-- Propensity score matching to estimate ATT.
-
-
+- T-tests to evaluate significant differences in characteristics between treated and control groups.
+- Propensity score matching to accurately estimate the ATT, offering a deeper understanding of the campaign's impact on targeted households.
